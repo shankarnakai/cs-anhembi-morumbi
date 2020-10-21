@@ -1,0 +1,44 @@
+<div ba-panel ba-panel-class="organization" ng-show="tab==1">
+  <h3 class="with-line">Mensagens</h3>
+
+  <div class="row" ng-repeat="item in talks">
+    <div class="col-md-8">
+      <h3 class=" ng-scope">{{item.title}}</h3>
+    </div>
+    <div class="col-md-4">
+      <a ng-click="view(item.id)" class="btn btn-primary btn-with-icon save-profile">
+       Atender 
+    </a>
+    </div>
+  </div>
+
+</div>
+
+
+<div ba-panel ba-panel-class="organization" ng-show="tab==2">
+  <h3 class="with-line">Conversa</h3>
+
+  <div id="message_{{item.id}}" class="row" ng-repeat="item in messages">
+    <div class="col-md-12">
+      <strong> {{item.name}} :</strong><br />
+      <div class="message">
+        {{item.message}}
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <textarea ng-model="model.message" style="width:100%">
+    </textarea>
+    </div>
+    <div class="col-md-12">
+      <a class="btn btn-primary btn-with-icon save-profile" ng-click="send()">
+         Enviar 
+      </a>
+    </div>
+  </div>
+</div>
+
+
+</div>

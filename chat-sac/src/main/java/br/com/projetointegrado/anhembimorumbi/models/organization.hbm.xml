@@ -1,0 +1,22 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="br.com.projetointegrado.anhembimorumbi.models">
+
+    <class name="Organization" table="Organization">
+        <id name="id" column="ID">
+            <generator class="increment"/>
+        </id>
+        <property name="Name"/>
+        <property name="CNPJ"/>
+        <property name="Email"/>
+        <property name="Phone" column="Telefone" />
+        <property name="FACEBOOK_TOKEN" />
+        <property name="FACEBOOK_ACCESS" />
+        <property name="FACEBOOK_PAGE" />
+        <property name="DateCreated" type="timestamp" column="date_created"/>
+        <property name="DateUpdated" type="timestamp" column="date_updated"/>
+    </class>
+
+</hibernate-mapping>

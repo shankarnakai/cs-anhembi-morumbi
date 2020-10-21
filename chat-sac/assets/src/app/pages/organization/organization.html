@@ -1,0 +1,74 @@
+<div ba-panel ba-panel-class="organization">
+  <h3 class="with-line">Dados da Organização</h3>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group row clearfix">
+        <label for="name" class="col-sm-3 control-label">Empresa</label>
+
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="name" ng-model="organization.name"
+            placeholder="Digite o seu nome" />
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group row clearfix">
+        <label for="email" class="col-sm-3 control-label">Email</label>
+
+        <div class="col-sm-9">
+          <input type="email" class="form-control" id="email" placeholder="digite o seu email"
+            ng-model="organization.email" required>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group row clearfix">
+        <label for="name" class="col-sm-3 control-label">Telefone</label>
+
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="name" ng-model="organization.phone"
+            placeholder="Digite seu telefone" />
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group row clearfix">
+        <label for="email" class="col-sm-3 control-label">CNPJ/CPF</label>
+
+        <div class="col-sm-9">
+          <input type="email" class="form-control" id="email" placeholder="Digite seu CPF"
+            ng-model="organization.cnpj" required>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <h3 class="with-line">Facebook</h3>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group row clearfix">
+        <label for="name" class="col-sm-3 control-label">Página</label>
+
+        <button type="button" class="btn btn-primary btn-with-icon save-profile" ng-click="connect()"
+          ng-hide="organization.facebook_TOKEN">
+            <i class="ion-android-checkmark-circle"></i>Conectar
+          </button>
+        <select class="form-control" selectpicker ng-model="organization.facebook_PAGE"
+          ng-show="organization.facebook_TOKEN">
+              <option value="" ng-selected="organization.facebook_PAGE == ''">Selecione uma opção</option>
+              <option ng-repeat="item in pages" ng-value="{{item.id}}" ng-selected="organization.facebook_PAGE == item.id">{{ item.name }}</option>
+            </select>
+      </div>
+    </div>
+  </div>
+
+  <button type="button" class="btn btn-primary btn-with-icon save-profile" ng-click="update()">
+      <i class="ion-android-checkmark-circle"></i>Atualizar dados
+    </button>
+</div>
+</div>

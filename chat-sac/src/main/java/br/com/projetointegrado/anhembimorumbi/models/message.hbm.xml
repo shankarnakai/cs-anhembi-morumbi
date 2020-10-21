@@ -1,0 +1,21 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="br.com.projetointegrado.anhembimorumbi.models">
+
+    <class name="Message" table="Message">
+        <id name="id" column="ID">
+            <generator class="increment"/>
+        </id>
+
+        <property name="Name"/>
+        <property name="USER_ID"/>
+        <property name="Text"/>
+        <property name="FACEBOOK_USER_ID" />
+        <property name="date_send" type="timestamp" column="date_send"/>
+        <property name="date_visualization" type="timestamp" column="date_visualization"/>
+        <property name="date_answer" type="timestamp" column="date_answer"/>
+    </class>
+
+</hibernate-mapping>

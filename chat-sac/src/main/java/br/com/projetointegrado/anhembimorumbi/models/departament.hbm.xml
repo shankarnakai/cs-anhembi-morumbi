@@ -1,0 +1,17 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="br.com.projetointegrado.anhembimorumbi.models">
+
+    <class name="Departament" table="Departament">
+        <id name="id" column="ID">
+            <generator class="increment"/>
+        </id>
+        <property name="Name"/>
+        <property name="ORG_ID"/>
+        <property name="DateCreated" type="timestamp" column="date_created"/>
+        <property name="DateUpdated" type="timestamp" column="date_updated"/>
+    </class>
+
+</hibernate-mapping>

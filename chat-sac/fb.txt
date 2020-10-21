@@ -1,0 +1,13 @@
+curl -X POST -H "Content-Type: application/json" -d '{ 
+  "recipient": {
+    "id": "987352125"
+  },
+  "message": {
+    "text": "hello, world!"
+  }
+}' "https://graph.facebook.com/v2.6/me/messages?access_token=EAAK1yaa82XgBAF8I9pIZBdrDuhCnAccVFcSDX3wcszk1UHzweJdZA2Nj1uL3fLkFpEhoLZADd02MkDfiMX3dUPDxC4FLqIKe24nlf6IGHOVXtbGOKxZAEkOgYsFK5GUrqNZCZAl0LCGRhyW5UnFnZBlEaBBvyZCgWPEyFv4DbzSTBgZDZD"
+
+
+https://developers.facebook.com/apps/762827643869560/settings/
+https://developers.facebook.com/docs/messenger-platform/send-api-reference#recipient
+https://developers.facebook.com/docs/messenger-platform/send-api-reference

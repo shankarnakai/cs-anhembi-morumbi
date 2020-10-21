@@ -1,0 +1,22 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="br.com.projetointegrado.anhembimorumbi.models">
+
+    <class name="User" table="User">
+        <id name="id" column="ID">
+            <generator class="increment"/>
+        </id>
+        <property name="Name"/>
+        <property name="Status"/>
+        <property name="Username"/>
+        <property name="Password"/>
+        <property name="orgID" column="ORG_ID"/>
+        <property name="departamentID" column="DEPARTAMENT_ID"/>
+        <property name="DateCreated" type="timestamp" column="date_created"/>
+        <property name="DateUpdated" type="timestamp" column="date_updated"/>
+        <property name="Salt"/>
+    </class>
+
+</hibernate-mapping>
