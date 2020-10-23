@@ -5,11 +5,20 @@ Each one of the project will contain more detail instruction of how to install a
 
 ## Projects 
 
-#### - Chat Sac
+#### - Chat CSC  (Customer Service Center)
+This is a project to interact with the Facebook Chat for business pages.
+It will allow admins to observe reports and detailed information about previous chats.
+The regular user will be able to chat with the user,  categorize, and register issues.
+
 
 #### - Game of Life (Conways game)
+The Game of Life (Conways game) is a game that is simulated on a computer screen.
+It is played on an infinity board where each cell of this board can have two states: alive or dead. The cells state define the game.
 
 #### - Scheduler Process
+This project simulates a preemptive Round-Robin scheduler where it will receive as input a file that
+describes detailed information about when a process will start, how much a process will take to finish
+and his priority. 
 
 #### - Exercises
 - Postfix
@@ -20,3 +29,4 @@ Each one of the project will contain more detail instruction of how to install a
 - Java
 - C
 - Angular.
+- Shell
