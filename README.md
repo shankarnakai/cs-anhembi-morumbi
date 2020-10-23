@@ -20,10 +20,15 @@ This project simulates a preemptive Round-Robin scheduler where it will receive 
 describes detailed information about when a process will start, how much a process will take to finish
 and his priority. 
 
+#### - Bank Queue 
+This project simulate a First come, First served (FCFS) Scheduler as bank queue.
+Clients will arrive randomly, spend a random time and realize some operation (deposit, withdraw and payment).
+In the end the project will create a report of the day.
+
+
 #### - Exercises
 - Postfix
 - Binary-search-algorithm
-- Queue
 
 ## Technologies
 - Java
